@@ -6,13 +6,14 @@
 # -> 기존 카드 뭉치의 단어 순서는 바꿀수 없음.
 
 def solution(cards1, cards2, goal):
-    answer = ''
-    for cards1
-
+    answer = "Yes"
+    x,y=0,0
+    for word in goal:
+        if len(cards1)>x and cards1[x]==word:
+            x+=1
+        elif len(cards2)>y and cards2[y]==word:
+            y+=1
+        else:
+            answer="No"
+            break
     return answer
-
-
-cards1=["i", "drink", "water"]
-cards2 = ["want", "to"]
-goal =["i", "want", "to", "drink", "water"]
-print(solution(cards1,cards2,goal))
