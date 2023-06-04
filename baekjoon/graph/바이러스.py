@@ -1,4 +1,4 @@
-# 바이러스 
+# 2606번
 n=int(input())
 m=int(input())
 network=[[] for _ in range(n+1)]

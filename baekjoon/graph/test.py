@@ -1,4 +1,11 @@
-visited=[[False]*4 for _ in range(4)]
-print(visited)
-visited[1][2]=True
-print(visited)
+
+
+from collections import deque
+
+d=deque()
+d.append((3,6))
+print(d)
+
+a,b = d.popleft()
+print(a)
+print(b)
