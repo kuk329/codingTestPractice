@@ -1,5 +1,9 @@
 
-num="505"
+s="abcde"
+new = "".join(reversed(s))
+print(new)
 
+b="helloworld"
 
-print(not set(str(num))-set(["0","5"]))
+new2=b[::-1]
+print(new2)

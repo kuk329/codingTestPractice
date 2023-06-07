@@ -20,7 +20,7 @@ graph=[[int(x) for x in list(input()) ] for _ in range(n)]
 def bfs(x,y):
     count=1
     d=deque()
-    d.append((x,y))
+    d.append((x,y))  
     visited[x][y]=count
     while d:
         a,b=d.popleft()

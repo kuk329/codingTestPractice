@@ -1,7 +1,7 @@
-# 피보나치 수 2
+# 2748 번
 # 피보나치 수 : f(n)=f(n-1)+f(n-2) 식을 사용
 # ----- 풀이 1 --------
-# dp 이용. -> bottom-up 
+# dp 이용. -> bottom-up (반복문)
 
 n = int(input())
 d=[0]*(n+1)
@@ -16,7 +16,7 @@ for i in range(n+1):
 print(d[n])
 
 # ---- 다른 풀이 -------
-# dp 이용. -> top-down
+# dp 이용. -> top-down (재귀)
 
 n= int(input())
 d=[-1]*(n+1) # or d=[-1]*91
