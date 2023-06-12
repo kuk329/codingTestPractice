@@ -1,9 +1,6 @@
 
-s="abcde"
-new = "".join(reversed(s))
-print(new)
 
-b="helloworld"
 
-new2=b[::-1]
-print(new2)
+arr=[-1,2,4,6,0]
+
+print(min(arr[1:]))
