@@ -37,6 +37,30 @@
 
 # print(ans)
 
-t="02"
-t=int(t)
-print(t)
+# t="02"
+# t=int(t)
+# print(t)
+
+# d={}
+# alpha="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+# print(len(alpha))
+# for idx,s in enumerate(alpha):
+#     d[s]=0
+
+# print(d)
+# answer=list(d.values())
+# print(answer)
+
+
+# import string
+
+# count = dict.fromkeys(string.ascii_uppercase+string.ascii_lowercase,0)
+
+# print(count)
+
+
+# print(string.ascii_uppercase) #
+# print(string.ascii_lowercase) #
+
+for i in range(10,2,-1):
+    print(i)
