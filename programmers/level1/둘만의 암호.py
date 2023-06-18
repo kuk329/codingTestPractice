@@ -2,34 +2,54 @@
 # 문자열 s의 각 알파벳을 index만큼 뒤의 알파벳으로 바꿈.
 
 
+# def solution(str,skip,index):
+#     answer=''
+#     tmp2=0
+#     ch=0
+#     add=0
+#     for s in str:
+#         add=0
+#         print('s :' ,s)
+#         for _ in range(index):
+#             add+=1
+#             ch=ord(s)+add
+#             if chr(ch) in skip:
+#                 add+=1
+                
+#         ch=ord(s)+add
+        
+#         print('ch ,add :',ch,add)
+     
+
+#         if ch >122:
+#             ch=ch-123
+#             ch=97+ch
+
+#         # 바뀐값 넣어줌.    
+#         answer+=chr(ch)
+#     print('answer',answer)
+#     return answer
 
 
-def solution(s, skip, index):
-    alpha = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
-    s1=set(alpha)
-    s2=set(skip)
-    s3=s1-s2
-    arr=list(s3)
-    arr.sort() # set으로 만들면 위치가 다 바뀌므로 정렬을 다시 해줘야됨.
-    d=dict()
-    for idx,value in enumerate(arr):
-        d[value]=idx
-    # d = {'a':0,'b':1}
-    n=len(arr)
-    print(d)
 
-    for i in range(len(s)):
-        tmp=d[s[i]] # 바뀌기 전 문자 위치
-        print('바뀌기 전 문자, 위치 : ', s[i],tmp)
-        tmp=(tmp+index)%n # 바꿀 문자의 위치
-        print('바꿀 문자 위치 : ',tmp)
-        change=arr[tmp] # 바꿀 문자
-        print('바뀔 문자 : ',change)
-        s=s.replace(s[i],change,1) # 문자열은 immutable type 이므로 수정이 불가능해서 원래 문자열을 바꾸는건 불가능. 새 문자열 반환
-        print(s)
-    
-
-    return s
+# print(solution("klmnopqrstuvwxyz","abcdefghij",20))
+# print(solution("aukks","wbqd",5))
 
 
-solution("aukks","wbqd",5)
+
+
+def solution(s,skip,index):
+    answer=""
+
+    alpha="abcdefghijklmnopqrstuvwxyz" # 알파벳 저장
+
+    for ch in skip: 
+        if ch in alpha:
+            alpha = alpha.replace(ch,"") # 해당 문자 삭제
+
+
+    for k in s:
+        change = alpha[(alpha.index(k)+index) % len(alpha)]
+        answer+=change
+
+    return answer
