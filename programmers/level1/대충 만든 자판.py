@@ -34,4 +34,3 @@ for target in targets:
 
 # 최소만 구하면 되므로
 # {"A":1,"B":1}
-    3
