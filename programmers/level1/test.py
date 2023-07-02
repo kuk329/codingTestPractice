@@ -147,7 +147,34 @@
 
 
 
-a=str(118372)
+# a=str(118372)
 
-for i in a:
-    print(i)
+# for i in a:
+#     print(i)
+
+
+
+
+# s="helloworld"
+# b=sorted(s)
+# print(b)
+
+
+# arr1=[[1,2],[2,3]]
+# arr2=[[3,4],[5,6]]
+
+# for num in zip(arr1,arr2):
+#     print(num)
+# arr1=[[1,2],[2,3]]
+# answer = [[0]*i for i in range(len(arr1[0]))]
+# print(answer)
+
+# s="try hello world"
+# y=list(s.split())
+# print(y)
+
+
+s="ad "
+y=s.rstrip()
+
+print(len(y))
