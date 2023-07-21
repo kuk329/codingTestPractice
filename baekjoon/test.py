@@ -6,6 +6,8 @@
 # s='abc'
 
 # new_s = reversed(s)
-# print(''.join(new_s))
 
-a,b,c= map(int,input().split())
+
+a=['a','b','c','d','e']
+print(a[::-1])
+print(a[1:4][::-1])

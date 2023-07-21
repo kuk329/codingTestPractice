@@ -12,7 +12,7 @@ for _ in range(n):
 
 
 # 나이순 정렬 -> 이름순 정렬
-info.sort(key=lambda x: (x[0],x[0]))
+info.sort(key=lambda x: x[0])
 
 
 # 출력
