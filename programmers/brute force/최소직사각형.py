@@ -1,6 +1,6 @@
 
 def solution(sizes):
-    answer = 0
+ 
     rows=[]
     cols=[]
     
