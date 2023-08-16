@@ -1,4 +1,6 @@
 
+# -------------- sol 1 -------------
+
 def solution(n, words):
     answer = []
     tmp=[]
@@ -22,6 +24,18 @@ def solution(n, words):
  
 
     return answer
+
+
+# -------------- sol 2 -------------
+
+def solution(n,words):
+    for i in range(1,len(words)): # 두번째 단어부터 확인
+        if words[i][0]!=words[i-1][-1] or words[i] in words[:i]:
+            return [(i%n)+1,(i//n)+1]
+
+        else:
+            return [0,0]
+
 
 
 
