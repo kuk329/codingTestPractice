@@ -48,21 +48,4 @@
 # print(max_length)
     
     
- 
-n,k =map(int,input().split()) # 동전의 개수와, 가치의 합
-coins=[]
 
-for i in range(n):
-    coins.append(int(input()))
-
-coins.sort(reverse=True) # 내림차순
-for i in range(0,n):
-    cnt=1
-    for j in range(i,n):
-        while coins[j]<=k:
-            k=k-coins[i]
-            cnt+=1
-            if k==0:
-                break
-    
-        
