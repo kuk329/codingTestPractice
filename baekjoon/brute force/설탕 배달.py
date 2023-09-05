@@ -18,7 +18,7 @@ while sugar>=0:
     cnt+=1
 
 
-if cnt==0:
+if sugar<0: # 조건 주의
     print(-1)
 else:
     print(cnt)
