@@ -7,6 +7,9 @@ graph=[]
 for _ in range(n):
     graph.append(input())
 
+
+print(graph)
+
 visited=[[False]*m for _ in range(n)]
 
 move=[(1,0),(0,1),(0,-1),(-1,0)]
