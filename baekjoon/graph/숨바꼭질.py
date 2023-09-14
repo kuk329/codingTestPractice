@@ -38,7 +38,42 @@ def bfs(s):
 bfs(n)
 
 print(distance[k])
-            
+
+
+# ------------------------------------
+          
+from collections import deque
+
+n,k = map(int,input().split())
+
+d=[-1]*200000
+
+def bfs(s):
+    d[s]=0
+    q=deque()
+    q.append(s)
+
+    
+    while q:
+        x=q.popleft()
+        if x==k:
+            break
+        if 0<=x-1<=100000:
+            if d[x-1]==-1:
+                d[x-1]=d[x]+1
+                q.append(x-1)
+        if 0<=x+1<=100000:
+            if d[x+1]==-1:
+                d[x+1]=d[x]+1
+                q.append(x+1)
+        if 0<=2*x<=100000:
+            if d[2*x]==-1:
+                d[2*x]=d[x]+1
+                q.append(2*x)
+
+bfs(n)
+print(d[k])
+
 
 
 
