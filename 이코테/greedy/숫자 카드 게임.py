@@ -38,3 +38,26 @@ for i in range(n):
 
 print(max_value)
 
+#
+
+# n, m  = map(int,input().split())
+
+# arr = []
+
+# for _ in range(n):
+#     tmp = list(map(int,input().split()))
+#     arr.append(tmp)
+
+# result = 0
+
+
+
+# for i in range(n):
+#     min_num = 10000
+#     for j in range(m):
+#         min_num = min(min_num,arr[i][j])
+
+#     result = max(result,min_num)
+
+
+# print(result)
